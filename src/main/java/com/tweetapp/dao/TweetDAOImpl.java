@@ -9,7 +9,6 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.luv2code.springdemo.entity.Customer;
 import com.tweetapp.entity.Reply;
 import com.tweetapp.entity.Tweet;
 import com.tweetapp.entity.User;

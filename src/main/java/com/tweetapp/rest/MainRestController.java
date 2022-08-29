@@ -21,7 +21,7 @@ import com.tweetapp.service.UserService;
 
 @RestController
 @RequestMapping("/api/v1.0/tweets")
-public class UserRestController {
+public class MainRestController {
 
 	@Autowired
 	private UserService userService;

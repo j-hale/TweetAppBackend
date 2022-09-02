@@ -1,10 +1,10 @@
 <html>
 <body>
 
-<h3>Spring CRM REST Demo</h3>
+<h3>Tweet App Backend API</h3>
 
 <hr>
-<a href="api/customers">View Customers</a>
+
 
 </body>
 </html>

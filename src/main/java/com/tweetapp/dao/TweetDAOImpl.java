@@ -13,6 +13,9 @@ import com.tweetapp.entity.Reply;
 import com.tweetapp.entity.Tweet;
 import com.tweetapp.entity.User;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Repository
 public class TweetDAOImpl implements TweetDAO {
 
@@ -21,7 +24,7 @@ public class TweetDAOImpl implements TweetDAO {
 
 	@Override
 	public List<Tweet> getTweets() {
-
+		log.info("+++TEST IN DAO METHOD+++");
 		Session currentSession = sessionFactory.getCurrentSession();
 		Query<Tweet> theQuery = currentSession.createQuery("from Tweet order by tweet_id DESC", Tweet.class);
 		List<Tweet> tweets = theQuery.getResultList();

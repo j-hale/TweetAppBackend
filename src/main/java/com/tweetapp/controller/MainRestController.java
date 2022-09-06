@@ -44,7 +44,7 @@ public class MainRestController {
 		log.info("REGISTER USER: " + user);
 		// set id to 0 here when you've implemented IDs
 		user.setUserId(0);
-		return userService.registerUser(user); 
+		return userService.registerUser(user);  
 	}
 
 	// Login
@@ -108,7 +108,7 @@ public class MainRestController {
 			return tweetService.deleteTweet(user, id);
 		}
 		// pass userid into delete tweet method
-		return null;
+		return null; 
 	}
 
 	// Like tweet
@@ -205,9 +205,7 @@ public class MainRestController {
 		return tweetService.getTweet(tweetID);
 	}
 	
-	public int mutiplyMethodForTest(int a, int b) {
-		return a*b;
-	}
+	
 
 	public TweetService getTweetService() {
 		return tweetService;
@@ -216,5 +214,15 @@ public class MainRestController {
 	public void setTweetService(TweetService tweetService) {
 		this.tweetService = tweetService;
 	}
+
+	public UserService getUserService() {
+		return userService;
+	}
+
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
+	
+	
 
 }
